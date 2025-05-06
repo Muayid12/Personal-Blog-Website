@@ -1,0 +1,127 @@
+/* Component styles */
+/* Cards */
+.game-card {
+  background: var(--secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-excerpt {
+  color: #aaa;
+  margin-bottom: 1rem;
+  flex: 1;
+  min-height: 4.5rem; 
+}
+
+.card-footer {
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+/* News Tags */
+.news-tag.breaking { background: #ff0000; color: white; text-align: center; font-size: medium; }
+.news-tag.update { background: #4169e1; color: white; text-align: center; font-size: medium; }
+.news-tag.rumor { background: #1b1a18; color: white; text-align: center; font-size: medium; }
+
+/* Featured Badge */
+.featured-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--primary);
+  color: black;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+
+.review-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.review-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.author-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(0, 255, 0, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border-left: 4px solid var(--primary);
+}
+
+.author-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  object-fit: cover;
+}
+
+.review-verdict {
+  background: rgba(0, 255, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border-left: 4px solid var(--primary);
+}
+
+.copyright span {
+  color: #00ff00; 
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+  padding: 0.5rem 0;
+}
